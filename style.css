@@ -1,5 +1,16 @@
+::root {
+  --timePassColor: rgb(128, 128, 128);
+  --timeFutureColor: rgba(11, 206, 190, 0.61);
+}
+
+.hourlyTimeArea {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'San-Francisco' 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1;
 }
@@ -9,16 +20,17 @@ textarea {
   border: none;
   resize: none;
   color: #000000;
-  border-left: 1px solid black;
   padding: 10px;
 }
+
+
 
 .jumbotron {
   text-align: center;
   background-color: transparent;
-  color: black;
+  color: rgb(0, 0, 0);
   border-radius: 0;
-  border-bottom: 10px solid black;
+  border-bottom: 5px solid black;
 }
 
 .description {
@@ -43,7 +55,7 @@ textarea {
 }
 
 .past {
-  background-color: #d3d3d3;
+  background-color: rgb(128, 128, 128);
   color: white;
 }
 
@@ -57,15 +69,32 @@ textarea {
   color: white;
 }
 
-.saveBtn {
+/* .saveBtn {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   background-color: #06aed5;
   color: white;
-}
+} */
 
-.saveBtn i:hover {
+/* .saveBtn i:hover {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
+} */
+
+.col-md-6 {
+  background-color: rgba(32, 32, 32, 0.363);
 }
+
+.col-md-3  {
+  background-color: rgba(184, 201, 204, 0.651);
+}
+
+.col-md-3 .endd {
+  background-color: rgba(218, 215, 71, 0.548);
+}
+
+.row {
+  border-radius: 2px 2px;
+}
+

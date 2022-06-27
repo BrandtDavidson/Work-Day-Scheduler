@@ -18,21 +18,171 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link rel="stylesheet" href="./style.css" />
     <title>Work Day Scheduler</title>
   </head>
 
   <body>
     <header class="jumbotron">
-      <h1 class="display-3">Work Day Scheduler</h1>
-      <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead"></p>
+      <h1 class="display-2 animate__animated animate__fadeIn">🗓</h1>
+      <h1 class="display-3 animate__animated animate__bounce">Work Day Scheduler</h1>
+      <p class="lead">Event scheduling made simple.</p>
+      <p id="currentDay" class="lead d-inline bg-light text-dark border-0 rounded"></p>
+
+      <h1>
+      <button type="button" class="btn btn-outline-primary" id="clearEvents"><i class="bi bi-arrow-clockwise"></i>Clear Events</button>
+      </h1>
     </header>
-    <div class="container">
-      <!-- Timeblocks go here -->
+
+    <div class="container ">
+
+      <div class="row mb-3">
+        <div class="col-md-3 themed-grid-col rounded-top">
+            <h2 class="hourlyTimeArea">🕒</h2>
+        </div>
+        <div class="col-md-6 themed-grid-col rounded-top">
+          <h2 class="hourlyTimeArea">✍️</h2>
+        </div>
+        <div class="col-md-3 end themed-grid-col rounded-top">
+          <h2 class="hourlyTimeArea">💾</h2>
+        </div>
+      </div>
+
+    </br>
+
+      <div class="row mb-3">
+        <div class="col-md-3 themed-grid-col">
+            <h4 class="hourlyTimeArea">09:00 am</h4>
+        </div>
+        <div class="col-md-6 themed-grid-col">
+          <textarea class="formInputField" id="09am"></textarea>
+        </div>
+        <div class="col-md-3 end themed-grid-col">
+          <button type="button" class="saveBtn btn btn-primary btn-lg btn-block"><h4>Save</h4></button>
+        </div>
+      </div>
+
+    </br>
+
+      <div class="row mb-3">
+        <div class="col-md-3 themed-grid-col">
+            <h4 class="hourlyTimeArea">10:00 am</h4>
+        </div>
+        <div class="col-md-6 themed-grid-col">
+          <textarea class="formInputField" id="10am"></textarea>
+        </div>
+        <div class="col-md-3 end themed-grid-col">
+          <button type="button" class="saveBtn btn btn-primary btn-lg btn-block"><h4>Save</h4></button>
+        </div>
+      </div>
+
+    </br>
+
+      <div class="row mb-3">
+        <div class="col-md-3 themed-grid-col">
+            <h4 class="hourlyTimeArea">11:00 am</h4>
+        </div>
+        <div class="col-md-6 themed-grid-col">
+          <textarea class="formInputField" id="11am"></textarea>
+        </div>
+        <div class="col-md-3 end themed-grid-col">
+          <button type="button" class="saveBtn btn btn-primary btn-lg btn-block"><h4>Save</h4></button>
+        </div>
+      </div>
+
+    </br>
+
+      <div class="row mb-3">
+        <div class="col-md-3 themed-grid-col">
+            <h4 class="hourlyTimeArea">12:00 pm</h4>
+        </div>
+        <div class="col-md-6 themed-grid-col">
+          <textarea class="formInputField" id="12pm"></textarea>
+        </div>
+        <div class="col-md-3 end themed-grid-col">
+          <button type="button" class="saveBtn btn btn-primary btn-lg btn-block"><h4>Save</h4></button>
+        </div>
+      </div>
+
+    </br>
+
+      <div class="row mb-3">
+        <div class="col-md-3 themed-grid-col">
+            <h4 class="hourlyTimeArea">01:00 pm</h4>
+        </div>
+        <div class="col-md-6 themed-grid-col">
+          <textarea class="formInputField" id="01pm"></textarea>
+        </div>
+        <div class="col-md-3 end themed-grid-col">
+          <button type="button" class="saveBtn btn btn-primary btn-lg btn-block"><h4>Save</h4></button>
+        </div>
+      </div>
+
+    </br>
+
+      <div class="row mb-3">
+        <div class="col-md-3 themed-grid-col">
+            <h4 class="hourlyTimeArea">02:00 pm</h4>
+        </div>
+        <div class="col-md-6 themed-grid-col">
+          <textarea class="formInputField" id="02pm"></textarea>
+        </div>
+        <div class="col-md-3 end themed-grid-col">
+          <button type="button" class="saveBtn btn btn-primary btn-lg btn-block"><h4>Save</h4></button>
+        </div>
+      </div>
+
+    </br>
+
+      <div class="row mb-3">
+        <div class="col-md-3 themed-grid-col">
+            <h4 class="hourlyTimeArea">03:00 pm</h4>
+        </div>
+        <div class="col-md-6 themed-grid-col">
+          <textarea class="formInputField" id="03pm"></textarea>
+        </div>
+        <div class="col-md-3 end themed-grid-col">
+          <button type="button" class="saveBtn btn btn-primary btn-lg btn-block"><h4>Save</h4></button>
+        </div>
+      </div>
+
+    </br>
+
+      <div class="row mb-3">
+        <div class="col-md-3 themed-grid-col">
+            <h4 class="hourlyTimeArea">04:00 pm</h4>
+        </div>
+        <div class="col-md-6 themed-grid-col">
+          <textarea class="formInputField" id="04pm"></textarea>
+        </div>
+        <div class="col-md-3 end themed-grid-col">
+          <button type="button" class="saveBtn btn btn-primary btn-lg btn-block"><h4>Save</h4></button>
+        </div>
+      </div>
+
+    </br>
+
+      <div class="row mb-3">
+        <div class="col-md-3 themed-grid-col">
+            <h4 class="hourlyTimeArea">05:00 pm</h4>
+        </div>
+        <div class="col-md-6 themed-grid-col">
+          <textarea class="formInputField" id="05pm"></textarea>
+        </div>
+        <div class="col-md-3 end themed-grid-col">
+          <button type="button" class="saveBtn btn btn-primary btn-lg btn-block"><h4>Save</h4></button>
+        </div>
+      </div>
+
+     
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
