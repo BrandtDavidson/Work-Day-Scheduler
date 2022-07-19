@@ -98,3 +98,7 @@ textarea {
   border-radius: 2px 2px;
 }
 
+.formInputField {
+  display: flex;
+  align-items: center;
+}

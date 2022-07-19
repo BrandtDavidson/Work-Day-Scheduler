@@ -1,3 +1,6 @@
+// Declaring all of the class form input field (text area) for jquery 
+
+
 var nineAm = $("#09am");
 var tenAm = $("#10am");
 var elevenAm = $("#11am");
@@ -30,8 +33,6 @@ var currentTimeInterval = setInterval(function() {
 }, 100);
 
 function genTime() {
-
-  console.log("Current Hour " + hour);
   var genTime9 = JSON.parse(localStorage.getItem("09:00 am"));
   nineAm.val(genTime9);
 
